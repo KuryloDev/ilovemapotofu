@@ -4,25 +4,6 @@
 
 <head>
 
-    <style>
-        body {
-            overflow: hidden;
-            background-color: black;
-        }
-
-        #tofu {
-            display: none;
-            position: absolute;
-            width: 100%;
-            height: auto;
-            top: 50%;
-            left: 50%;
-            object-fit: cover;
-            transform: translate(-50%,-50%);
-            position: fixed;
-        }
-    </style>
-
 
     <!-- Primary Meta Tags -->
     <title>I LOVE MAPO TOFU!</title>
@@ -52,9 +33,17 @@
 </head>
 
 <body>
-
-    <img id="tofu" src="./mapotofu.png" alt="mapo" style="display: inline;">
-
+    <style>
+        body {
+            overflow: hidden;
+            background-color: black;
+            background-image: url('mapotofu.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
 </body>
 
 </html>
