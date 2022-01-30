@@ -1,0 +1,12 @@
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+.vs/
+
+*.dll
+*.json
+*.suo
+*.CopyComplete
+
+
