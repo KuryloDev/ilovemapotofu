@@ -1,0 +1,203 @@
+/*-------------------------------
+    BASE CSS
+-------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+body {
+    font-family: "Prompt", sans-serif;
+    color: #952b35;
+
+    background: no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.text-border {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/*-------------------------------
+    BUTTON CSS
+-------------------------------*/
+.button {
+    display: inline-block;
+    font-weight: 500;
+
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #952b35;
+
+    padding: 0 40px;
+    font-size: 15px;
+    line-height: 48px;
+    border-radius: 50px;
+
+    color: #fff;
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+
+    -webkit-box-shadow: 0px 5px 8px 0px rgba(149, 43, 53, 1);
+    -moz-box-shadow: 0px 5px 8px 0px rgba(149, 43, 53, 1);
+    box-shadow: 0px 5px 8px 0px rgba(149, 43, 53, 1);
+
+    background-color: #952b35;
+    text-transform: uppercase;
+}
+.button:hover {
+    background-color: #fff;
+    color: #952b35;
+    border-color: #952b35;
+}
+
+/*-------------------------------
+    NAV HOVER-ANIMATION
+-------------------------------*/
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #952b35;
+}
+
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #952b35;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+/*-------------------------------
+    HEADER CSS
+-------------------------------*/
+
+.header-content {
+    height: 730px;
+    width: 100%;
+    margin-top: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*-------------------------------
+    NAV CSS
+-------------------------------*/
+
+.navigation {
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
+  -moz-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
+  box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
+
+  padding: 10px 0;
+  padding-top: 30px;
+  background-color: #fff;
+
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+
+  .navigation .navbar {
+    padding: 0;
+    position: relative; }
+
+    .navigation .navbar .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 5px; }
+
+/*-------------------------------
+    NAV SIDEBAR TOGGLE CSS
+-------------------------------*/
+
+    .navigation .navbar .navbar-toggler {
+      padding: 2px 6px; }
+
+      .navigation .navbar .navbar-toggler .toggler-icon {
+        width: 30px;
+        height: 2px;
+        background-color: #32333c;
+        margin: 5px 0;
+        display: block;
+        position: relative;
+
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .navigation .navbar .navbar-collapse {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 99;
+        -webkit-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
+        -moz-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
+        box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
+        padding: 3px 12px; } }
+
+    @media (max-width: 767px) {
+      .navigation .navbar .navbar-collapse {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 99;
+        -webkit-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
+        -moz-box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
+        box-shadow: 0px 10px 15px 0px rgba(134, 134, 134, 0.15);
+        padding: 3px 12px; } }
+
+    .navigation .navbar .navbar-nav .nav-item {
+      margin-left: 30px; }
+
+      .navigation .navbar .navbar-nav .nav-item a {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #8a8fa3;
+        font-weight: 500;
+        position: relative;
+
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+
+      .navigation .navbar .navbar-nav .nav-item.active a, .navigation .navbar .navbar-nav .nav-item:hover a {
+        color: #952b35; }
+
+
